@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Page d'accueil</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav li {
+      margin: 0 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #ccc;
+      padding: 1rem;
+      text-align: center;
+    }
+    .modes-btn {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #333;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-right: 5px;
+    }
+
+    .modes-btn:hover {
+      background-color: #4C4C4C;
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <h1>Projet JS</h1>
+  <nav>
+    <ul>
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h2>Bienvenue</h2>
+  <p>Ceci est une page d'accueil simple, basic</p>
+  <p>Vous pouvez naviguer sur le site en utilisant le menu en haut.</p>
+  <p>Créez vous un compt et commencer a jouer</p>
+  <p>Good luck bro !</p>
+  <button class="modes-btn" onclick="window.location.href = 'http://localhost:3000/register';" value="Register">
+    <p>Register</p>
+  </button>
+</main>
+<footer>
+  <p>&copy; 2023 Mon site - Tous droits réservés.</p>
+</footer>
+</body>
+</html>
