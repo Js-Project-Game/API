@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'scratchy_regular';
+    src: url('game/res/webfontkit-20230328-053705/scratchy-webfont.woff2') format('woff2'),
+    url('game/res/webfontkit-20230328-053705/scratchy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'take_looksregular';
+    src: url('game/res/webfontkit-20230328-053705/take_looks-webfont.woff2') format('woff2'),
+    url('game/res/webfontkit-20230328-053705/take_looks-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #000000;
+    font-family: 'scratchy_regular', sans-serif;
+    font-size: 64px;
+}
+
+h1 {
+    color: #dd4444;
+    font-size: 128px;
+    margin-top: 50px;
+    font-family: 'scratchy_regular', sans-serif;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    width: 400px;
+    height: 100px;
+    margin: 50px auto;
+    background-color: #000000;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'take_looksregular', sans-serif;
+    transition: background-color 0.15s ease;
+}
+
+.btn:hover {
+    background-color: rgba(85, 136, 170, 0.21);
+}
+
+.btn:active {
+    background-color: #999999;
+}

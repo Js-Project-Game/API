@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'scratchy_regular';
+    src: url('game/res/webfontkit-20230328-053705/scratchy-webfont.woff2') format('woff2'),
+    url('game/res/webfontkit-20230328-053705/scratchy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'take_looksregular';
+    src: url('game/res/webfontkit-20230328-053705/take_looks-webfont.woff2') format('woff2'),
+    url('game/res/webfontkit-20230328-053705/take_looks-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'take_looksregular', 'scratchy_regular', sans-serif;
+}
+body {
+    width: 98.5vw;
+    height: 98.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gameCanvas {
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #a64d79 0%, #741b47 100%);
+    font-family: take_looksregular, scratchy_regular, sans-serif;
+}
