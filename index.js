@@ -6,8 +6,6 @@ const fs = require("fs");
 const sqlite3 = require('sqlite3').verbose();
 const querystring = require('querystring');
 const handlebars = require('handlebars');
-const {FORMAT} = require("sqlite3");
-const sprintf = require('sprintf-js').sprintf;
 
 // Configure la clé secrète utilisée pour signer les cookies
 app.use(cookieParser());
@@ -141,6 +139,13 @@ app.post("/api/skin", function (req, res) {
 });
 
 app.get("/games/solo", function (req, res) {
+    fs.readFile('./games/game/game.html', null, (error, data) => {
+        if (error) {
+            res.end('fill have error')
+        } else {
+            res.end(data)
+        }
+    })
 });
 
 app.get("/user", function (req, res) { // Chemin vers l'image
